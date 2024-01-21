@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header,
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.header {
+    font-family: Comic Sans MS;
+    font-size: 40px;
+}
+
+.footer {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.footer > a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    gap: 16px;
+    font-family:Roboto;
+    padding: 48px 0;
+}
+
+.players {
+    display: flex;
+    column-gap: 24vw;
+    font-size: 24px;
+}
+
+.players > div {
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
+.message {
+    font-size: 18px;
+    min-height: 32px;
+}
+
+    #startBtn {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin-top: 24px;
+}
+
+.cell {
+    height: 84px;
+    width: 84px;
+    border: 1px solid grey;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #E8E8E8;
+}
+
+.disable {
+    background-color: none;
+    cursor: not-allowed;
+}
+
+.active {
+    background-color: #90EE90;
+}
